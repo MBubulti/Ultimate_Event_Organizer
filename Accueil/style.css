@@ -30,13 +30,23 @@ li{
 /*Effet visuel des boutons de la navigations*/
 .boutons{
     text-decoration: none; /*Suppression du soulignage des liens*/
-    display:block; /*Permet de considérer les éléments comme des blocks*/
+    display:flex; /*Permet de considérer les éléments comme des blocks*/
     padding: 1em;
     margin: 0.2em 1em;
     border:0.1em solid black;
 }
 
-.boutons:hover{ /*Ajout d'effet au  survolage & display des autres éléments*/
+/*.boutons:hover{
+} /*Ajout d'effet au  survolage & display des autres éléments
 
+/* Modifications &  Personnalisation aspect du bouton Connexion*/
+#boutonConnexion {
+    height: 3em;
+    width: 6em;
+    border:0.2em solid black;
+    border-radius: 0.5em;
+    background-color: white;
 }
-
+#boutonConnexion:hover {
+    background-color: grey;
+}

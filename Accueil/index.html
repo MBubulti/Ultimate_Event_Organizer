@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!--Ajout des //différents// scripts nécessaires-->
-    <script src="" defer></script>
+    <script src="../Scripts_JS/common.js" defer></script>
 
     <!--SEO à réaliser-->
 
@@ -30,7 +30,9 @@
                 <li><a class="boutons" href="../Joueur/Profil_Joueur.html"><h1>Profil Joueur</h1></a></li>
                 <li><a class="boutons" id="boutonAide" href="../Aide/FAQ.html"><h1>Aide</h1></a></li>
             </ul>
+            <button id="boutonConnexion">Connexion</button>
         </nav>
+
     </header>
     <!--Main-->
     <main>
@@ -42,5 +44,19 @@
         <p>Site open source, publié sous la licence <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>.</p>
         <p> Code source disponible sur <a href="https://github.com/MBubulti/Ultimate_Event_Organizer" target="_blank">GitHub</a>.</p>
     </footer>
+    <!--Pop up de  connexion-->
+    <div class="popupFond">
+        <div class="popup">
+            <div>Connexion à votre compte</div>
+            <form>
+                <label></label>
+                <input type="text" id="nomConnexion" name="Identifiant" placeholder="Entrer votre Identifiant">
+                <label></label>
+                <input type="text" id="motDePasse" name="motDePasse" placeholder="...">
+            </form>
+        </div>
+
+
+    </div>
 </body>
 </html>
