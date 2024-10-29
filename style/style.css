@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /*Personnalisation des boutons de la barre de navigation*/
@@ -37,16 +36,21 @@ li{
 }
 
 /*.boutons:hover{
-} /*Ajout d'effet au  survolage & display des autres éléments
-
+} /*Ajout d'effet au  survolage & display des autres éléments*/
+.btnAideSuite{
+    visibility: hidden;
+    padding: 0.2em;
+    border: 0.1em solid red;
+    margin: 0.1em;
+}
 /* Modifications &  Personnalisation aspect du bouton Connexion*/
-#boutonConnexion {
+#btnConnexion {
     height: 3em;
     width: 6em;
     border:0.2em solid black;
     border-radius: 0.5em;
     background-color: white;
 }
-#boutonConnexion:hover {
+#btnConnexion:hover {
     background-color: grey;
 }

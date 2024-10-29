@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--Ajout du titre et du logo en icone-->
-    <title>Ultimate Event Organizer</title>
+    <title>Ultimate Organizer</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!--Ajout du CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <!--Ajout des //différents// scripts nécessaires-->
     <script src="../Scripts_JS/common.js" defer></script>
@@ -22,21 +22,33 @@
 <body>
     <!--Header-->
     <header>
+        <h1>Ultimate Organizer</h1>
     <!--Barre  de navigation en haute de la page-->
         <nav>
             <ul class="barreNav">
-                <li><a class="boutons" href="index.html"><h1>Accueil</h1></a></li>
+                <li><a class="boutons" href="../Accueil/index.html"><h1>Accueil</h1></a></li>
                 <li><a class="boutons" href="../Gestionnaire/Organisation.html"><h1>Organisation</h1></a></li>
                 <li><a class="boutons" href="../Joueur/Profil_Joueur.html"><h1>Profil Joueur</h1></a></li>
-                <li><a class="boutons" id="boutonAide" href="../Aide/FAQ.html"><h1>Aide</h1></a></li>
+                <li><a class="boutons" href="../Aide/Aide.html"><h1>Aide</h1></a></li>
             </ul>
-            <button id="boutonConnexion">Connexion</button>
+            <button id="btnConnexion">Connexion</button>
         </nav>
 
     </header>
     <!--Main-->
     <main>
-
+        <!--Fenêtre Recherche évènement-->
+        <div class="zoneRecherche">
+            <h2>Les évènements à venir...</h2>
+        </div>
+        <!--Fenêtre d'information sur l'événement en cours-->
+        <div class="zoneEnCours">
+            <h2>Votre évènement en cours</h2>
+        </div>
+        <!--Fenêtre d'informations sur les mise à jours  du site-->
+        <div class="zoneMAJ">
+            <h2>Les récentes mise à jours du site</h2>
+        </div>
     </main>
     <!--Footer-->
     <footer>
@@ -49,14 +61,13 @@
         <div class="popup">
             <div>Connexion à votre compte</div>
             <form>
-                <label></label>
-                <input type="text" id="nomConnexion" name="Identifiant" placeholder="Entrer votre Identifiant">
-                <label></label>
-                <input type="text" id="motDePasse" name="motDePasse" placeholder="...">
+                <label for="nomConnexion">Votre Identifiant</label>
+                <input type="text" id="nomConnexion" name="Identifiant" placeholder="Identifiant">
+                <label for="motDePasse">Votre Mot de Passe</label>
+                <input type="password" id="motDePasse" name="motDePasse" placeholder="Mot de Passe">
+                <button id="btnEnvoiConnexion">Connexion</button>
             </form>
         </div>
-
-
     </div>
 </body>
 </html>

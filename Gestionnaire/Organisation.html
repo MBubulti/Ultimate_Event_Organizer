@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--Ajout du titre et du logo en icone-->
-    <title>Ultimate Event Organizer</title>
+    <title>Ultimate Organizer</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!--Ajout du CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <!--Ajout des //différents// scripts nécessaires-->
-    <script src="" defer></script>
+    <script src="../Scripts_JS/common.js" defer></script>
 
     <!--SEO à réaliser-->
 
@@ -22,19 +22,54 @@
 <body>
     <!--Header-->
     <header>
+        <h1>Ultimate Organizer</h1>
     <!--Barre  de navigation en haute de la page-->
         <nav>
-            <ul>
-                <a class="boutons" href="index.html"><h1>Accueil</h1></a>
-                <a class="boutons" href="../Gestionnaire/Organisation.html"><h1>Organisation</h1></a>
-                <a class="boutons" href="../Joueur/Profil_Joueur.html"><h1>Joueur</h1></a>
-                <a class="boutons" href="../Aide/FAQ.html"><h1>Aide</h1></a>
+            <ul class="barreNav">
+                <li><a class="boutons" href="../Accueil/index.html"><h1>Accueil</h1></a></li>
+                <li><a class="boutons" href="../Gestionnaire/Organisation.html"><h1>Organisation</h1></a></li>
+                <li><a class="boutons" href="../Joueur/Profil_Joueur.html"><h1>Profil Joueur</h1></a></li>
+                <li><a class="boutons" href="../Aide/Aide.html"><h1>Aide</h1></a></li>
             </ul>
+            <button id="btnConnexion">Connexion</button>
         </nav>
+
     </header>
     <!--Main-->
     <main>
+        <!--Boutons de choix de gestion-->
+        <button class="btnChoixGestion" id="btnCreation"><h1>Créer mon évènement</h1></button>
+        <button class="btnChoixGestion" id="btnGestion"><h1>Gérer son évènement</h1></button>
+        <button class="btnChoixGestion" id="btnVisionnage"><h1>Voir mes évènements passés</h1></button>
+        <!--Sections spécifiques à chaque bouton choisi-->
+            <!--Section  de Création-->
+        <section class="sectionGestion" id="sectionCreation">Formulaire Création
+            <p>Merci de renseigner toutes les cases suivantes afin de créer votre tournoi</p>
+            <fieldset>
+                <legend>Choisissez le format de votre évènement</legend>
+                <div>
+                    <input type="radio" id="Tournoi" name="choixFormat" value="tournoi"/>
+                    <label for="Tournoi">Créer un tournoi</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="HAT" name="choixFormat" value="HAT"/>
+                    <label for="HAT">Créer un HAT</label>
+                </div>
 
+                <div>
+                    <input type="radio" id="Championnat" name="choixFormat" value="championnat"/>
+                    <label for="Championnat">Créer un championnat</label>
+                </div>
+            </fieldset>
+            <form>
+                <label></label>
+            </form>
+        </section>
+            <!--Section  de Gestion-->
+        <section class="sectionGestion" id="sectionGestion">Tableau de Gestion</section>
+            <!--Section  de Visionnage-->
+        <section class="sectionGestion" id="sectionVisionnage">Tableau de Visionnage</section>
     </main>
     <!--Footer-->
     <footer>

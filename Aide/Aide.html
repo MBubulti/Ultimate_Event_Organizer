@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!--Ajout du titre et du logo en icone-->
-    <title>Ultimate Event Organizer</title>
+    <title>Ultimate Organizer</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!--Ajout du CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <!--Ajout des //différents// scripts nécessaires-->
-    <script src="" defer></script>
+    <script src="../Scripts_JS/common.js" defer></script>
 
     <!--SEO à réaliser-->
 
@@ -22,19 +22,27 @@
 <body>
     <!--Header-->
     <header>
+        <h1>Ultimate Organizer</h1>
     <!--Barre  de navigation en haute de la page-->
         <nav>
-            <ul>
-                <a class="boutons" href="index.html"><h1>Accueil</h1></a>
-                <a class="boutons" href="../Gestionnaire/Organisation.html"><h1>Organisation</h1></a>
-                <a class="boutons" href="../Joueur/Profil_Joueur.html"><h1>Joueur</h1></a>
-                <a class="boutons" href="../Aide/FAQ.html"><h1>Aide</h1></a>
+            <ul class="barreNav">
+                <li><a class="boutons" href="../Accueil/index.html"><h1>Accueil</h1></a></li>
+                <li><a class="boutons" href="../Gestionnaire/Organisation.html"><h1>Organisation</h1></a></li>
+                <li><a class="boutons" href="../Joueur/Profil_Joueur.html"><h1>Profil Joueur</h1></a></li>
+                <li><a class="boutons" href="../Aide/Aide.html"><h1>Aide</h1></a></li>
             </ul>
+            <button id="btnConnexion">Connexion</button>
         </nav>
+
     </header>
     <!--Main-->
     <main>
-
+        <div class="zoneTutoriels">
+            <h2>Tutoriels</h2>
+        </div>
+        <div class="zoneFAQ">
+            <h2>FAQ</h2>
+        </div>
     </main>
     <!--Footer-->
     <footer>
