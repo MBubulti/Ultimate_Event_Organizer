@@ -1,56 +1,72 @@
+/***Règles Générales***/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
 }
 
-/*Personnalisation des boutons de la barre de navigation*/
-/*Définition de nav comme flexbox*/
-nav{
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
+main {
+  margin: 0 50px;
 }
 
-/*Définition barre de navigation en row
-Liste ul avec classe spécifique pour l'identifier
-Ajout de li pour s'assurer d'avoir toujours un affichage en  ligne */
-ul.barreNav{
-    list-style: none;
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/***Barre de navigation***/
+/*Modification taille logo*/
+header img {
+  height: 50px;
+  width: 50px;
+}
+
+/*Customisation Barre Navigation*/
+.barre-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-nav {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+}
+
+.switch-langue {
+  background-color: aqua;
+  border: 3px dotted grey;
+  border-radius: 25px;
+}
+
+/*Main*/
+/**/
+.box-main{
     display: flex;
-    gap: 5em;
-    padding: 0;
-    margin: 0;
-}
-li{
-    display: inline;
+    flex-direction: row;
+    gap: 50px;
 }
 
-/*Effet visuel des boutons de la navigations*/
-.boutons{
-    text-decoration: none; /*Suppression du soulignage des liens*/
-    display:flex; /*Permet de considérer les éléments comme des blocks*/
-    padding: 1em;
-    margin: 0.2em 1em;
-    border:0.1em solid black;
-}
+main img {
+    height: 300px;
+    width: 30%;
+  }
 
-/*.boutons:hover{
-} /*Ajout d'effet au  survolage & display des autres éléments*/
-.btnAideSuite{
-    visibility: hidden;
-    padding: 0.2em;
-    border: 0.1em solid red;
-    margin: 0.1em;
+.box-titre{
+  background-color: aquamarine;
+  border: 1px solid grey;
+  box-shadow: 5px 15px 20px black;
 }
-/* Modifications &  Personnalisation aspect du bouton Connexion*/
-#btnConnexion {
-    height: 3em;
-    width: 6em;
-    border:0.2em solid black;
-    border-radius: 0.5em;
-    background-color: white;
-}
-#btnConnexion:hover {
-    background-color: grey;
+/***Footer***/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+  background-color: bisque;
 }

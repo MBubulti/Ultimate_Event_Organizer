@@ -8,7 +8,7 @@
 
     <!--Ajout du titre et du logo en icone-->
     <title>Ultimate Organizer</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
 
     <!--Ajout du CSS-->
     <link rel="stylesheet" href="../style/style.css" />
@@ -20,44 +20,23 @@
   </head>
   <body>
     <!--Header-->
-    <header>
-      <h1>Ultimate Organizer</h1>
-      <!--Barre  de navigation en haute de la page-->
-      <nav>
-        <ul class="barreNav">
-          <li>
-            <a class="boutons" href="../Accueil/index.html"><h1>Accueil</h1></a>
-          </li>
-          <li>
-            <a class="boutons" href="../Gestionnaire/Organisation.html"
-              ><h1>Organisation</h1></a
-            >
-          </li>
-          <li>
-            <a class="boutons" href="../Joueur/Profil_Joueur.html"
-              ><h1>Profil Joueur</h1></a
-            >
-          </li>
-          <li>
-            <a class="boutons" href="../Aide/Aide.html"><h1>Aide</h1></a>
-          </li>
-        </ul>
-        <button id="btnConnexion">Connexion</button>
-      </nav>
+    <header class="barre-navigation">
+      <ul class="navigation">
+        <li class="btn-nav"> <a href="#">Accueil</a></li>
+        <li class="btn-nav"><a href="#">Espace Gestion</a></li>
+        <li class="btn-nav"><a href="#">Espace Joueur</a></li>
+        <li class="btn-nav"><a href="#">Aide</a></li>
+      </ul>
+      <div class="switch-langue">Eng/Fra</div>
     </header>
     <!--Main-->
-    <main>
-      <!--Fenêtre Recherche évènement-->
-      <div class="zoneRecherche">
-        <h2>Les évènements à venir...</h2>
-      </div>
-      <!--Fenêtre d'information sur l'événement en cours-->
-      <div class="zoneEnCours">
-        <h2>Votre évènement en cours</h2>
-      </div>
-      <!--Fenêtre d'informations sur les mise à jours  du site-->
-      <div class="zoneMAJ">
-        <h2>Les récentes mise à jours du site</h2>
+    <main class="box-main">
+      <img src="../img/icon.png" alt="Logo d'Ultimate Event Organizer" />
+      <div class="box-titre">
+        <h1>Bienvenue sur Ultimate Event Organizer</h1>
+        <section>
+          <h2>Actualités</h2>
+        </section>
       </div>
     </main>
     <!--Footer-->
@@ -76,28 +55,5 @@
         >.
       </p>
     </footer>
-    <!--Pop up de  connexion-->
-    <div class="popupFond">
-      <div class="popup">
-        <div>Connexion à votre compte</div>
-        <form>
-          <label for="nomConnexion">Votre Identifiant</label>
-          <input
-            type="text"
-            id="nomConnexion"
-            name="Identifiant"
-            placeholder="Identifiant"
-          />
-          <label for="motDePasse">Votre Mot de Passe</label>
-          <input
-            type="password"
-            id="motDePasse"
-            name="motDePasse"
-            placeholder="Mot de Passe"
-          />
-          <button id="btnEnvoiConnexion">Connexion</button>
-        </form>
-      </div>
-    </div>
   </body>
 </html>
